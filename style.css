@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  position: relative;
+  background: url(./images/city.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: slide 120s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        background-image: url(./images/city.jpg);
+    }
+    33% {
+        background-image: url(./images/flight-landscape-nature-sky-36717.jpg);
+    }
+    66% {
+        background-image: url(./images/abstract-art-artistic-autumn-459301.jpg);
+    }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  flex-direction: row;
+  height: 15vh;
+  background-color: rgba(250, 243, 243, 0.1);
+  align-items: center;
+}
+
+.header-logo {
+  margin-left: 100px;
+  margin-top: 15px;
+}
+
+.logo-itself {
+  text-align: center;
+  margin-left: 100px;
+  color: #fff;
+  font-size: 1.5em;
+  letter-spacing: 3px;
+  animation-name: alireza;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  padding: 5px;
+}
+
+@keyframes alireza {
+  from {
+    color: #fff;
+    border-radius: 50px;
+    background-color: rgba(124, 252, 0, 0.2);
+  }
+  to {
+    color: red;
+    border-radius: 5px;
+    background-color: rgba(255, 0, 255, 0.3);
+    color: lightskyblue;
+  }
+}
+
+@keyframes ali {
+  0% {
+    top: 0;
+    left: 30px;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+/* nav bar styles */
+
+.nav-itself {
+  margin-top: 0px;
+  display: flex;
+  margin-right: 0;
+}
+
+.nav-itself .nav-ul {
+  display: flex;
+  margin: 10px;
+  list-style: none;
+  margin-right: 300px;
+}
+
+.nav-itself .nav-li {
+  margin-right: 15px;
+  margin-top: 15px;
+  color: #fff;
+  transition: all 0.5s ease-out;
+  padding: 5px;
+  padding-top: 5px;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+
+.nav-itself .nav-li a {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.nav-itself .nav-li:hover {
+  background-color: lawngreen;
+  transform: scale(1.5);
+  border-radius: 5px;
+  cursor: pointer;
+  border-bottom: none;
+}
+
+/* search bar styles */
+.search-box {
+  background-color: lawngreen;
+  position: absolute;
+  right: 15px;
+  top: 30px;
+  height: 50px;
+  display: flex;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.search-txt {
+    height: 30px;
+    width: 0px ;
+    border: none;
+    outline: none;
+    display: flex;
+    background: none;
+    float: left;
+    padding: 0;
+    color: #fff;
+    transition: all 0.5s linear;
+}
+
+.search-box:hover > .search-txt {
+    width: 200px;
+    color: #fff;
+}
+
+.fa {
+    float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: lawngreen;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+
+
+/* main-page styles */
+
+.main-page {
+  position: absolute;
+  top: 15vh;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-content {
+  padding: 15px;
+  border: none;
+  line-height: 50px;
+}
+
+.header-1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.button-contents {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.btns {
+  padding: 5px;
+  width: 200px;
+  height: 40px;
+  margin-right: 20px;
+  border-radius: 50px;
+  font-size: larger;
+  font-weight: 900;
+  color: #fff;
+  transition: transform 0.5s linear;
+  outline: none;
+  border: none;
+}
+
+.signup-btn {
+  background: transparent;
+  border: 1px solid yellow;
+  transition: all 0.5s linear, all 0.5s linear;
+}
+
+.signin-btn {
+  background-color: rgba(124, 252, 0, 0.8);
+}
+
+.btns:hover {
+  transform: scale(1.2);
+  outline: none;
+  cursor: pointer;
+}
+
