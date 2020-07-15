@@ -1,0 +1,95 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --mainblue: #4a8fe7;
+  --white: #fff;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--mainblue);
+}
+
+main {
+  height: 90vh;
+  width: 90%;
+  background: url(../images/mohamed-sameeh-xi1kJ0OYlL8-unsplash.jpg)
+      center/cover,
+    no-repeat;
+  border-radius: 10px;
+}
+
+header {
+  border-radius: inherit;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+header ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  margin-right: 2rem;
+}
+
+header ul li {
+  margin: 2rem 1rem;
+  text-decoration: none;
+}
+
+header ul li .navbar-link {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #4e598c;
+  font-size: large;
+  padding: 1rem;
+  border-radius: 3px;
+  transition: all 0.3s linear;
+}
+
+.navbar-link:hover {
+    background-color: var(--mainblue);
+    color: var(--white);
+  }
+  
+
+#active {
+  background-color: var(--mainblue);
+  color: var(--white);
+}
+
+#active:hover {
+    background-color: var(--white);
+    color: var(--mainblue);
+}
+
+
+.navbar-link:hover {
+  background-color: var(--mainblue);
+  color: var(--white);
+}
+
+@media screen and (max-width:768px) {
+    header ul {
+        flex-direction: column;
+    }
+    header ul li {
+        margin: 1rem;
+    }
+}
+
