@@ -1,0 +1,220 @@
+/* 
+#f7f3f0
+#b5d0eb
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --darkcolor: #1e1f21;
+  --gray: #484e4e;
+  --lightcolor: #f7f3f0;
+  --lightgray: #97b2de;
+  --blue: #1a4bbe;
+  --lightblue: #1791b1;
+  --purple: #b80e65;
+  --white: #fff;
+}
+
+html,
+body {
+  width: 100%;
+  background-color: var(--white);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* header styles starts here */
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+    url("./images/close-up-photography-of-smartphone-beside-binder-clip-1841841.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-wrapper {
+    background-color: var(--purple);
+}
+
+.header-banner {
+    width: 100%;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-banner h4 {
+    color: var(--lightcolor);
+    text-transform: capitalize;
+    margin: 0 1rem;
+    line-height: 2;
+}
+
+.header-section-icon i {
+  color: var(--lightcolor);
+  margin-top: 2rem;
+  font-size: 2rem;
+  animation: header-icon 1s linear infinite;
+  padding: 0.5rem 0.8rem;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+@keyframes header-icon {
+  0% {
+    transform: translatey(0);
+  }
+  25% {
+    transform: translatey(0.1rem);
+  }
+  50% {
+    transform: translateY(0.2rem);
+  }
+  75% {
+    transform: translateY(0.1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (min-width:769px) {
+    .header-banner h4 {
+        font-size: 150%;
+    }
+    .header-banner h4 span {
+        margin: 0 1rem;
+    }
+}
+/* header styles ends here */
+
+/* about section styles starts here */
+
+.about {
+  background-color: var(--darkcolor);
+  padding: 3rem 0 3rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items:center ;
+}
+
+.about-container {
+  position: relative;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.about-contents {
+  flex: 1 1 auto;
+  position: relative;
+  height: 40vh;
+  width: 80%;
+  height: 40vh;
+  margin: 2rem auto;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.02);
+  border-radius: 10px;
+}
+
+
+.about-contents img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.about-contents:hover img {
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.about-contents h1,h2,p {
+  color: var(--lightcolor);
+  padding-left: 1rem;
+  transition: all 0.3s linear;
+}
+
+.about-contents h1{
+  position: absolute;
+  top: 10%;
+  visibility: hidden;
+  transition-delay: 0.7s;
+  font-size: 2rem;
+}
+
+.about-contents h2 {
+  position: absolute;
+  top: 20%;
+  visibility: hidden;
+  transition-delay: 0.5s;
+}
+
+.about-contents p {
+  position: absolute;
+  top: 30%;
+  visibility: hidden;
+  transition-delay: 0.3s;
+}
+
+.about-contents:hover h1 {
+  top: 55%;
+  visibility: visible;
+}
+
+.about-contents:hover h2 {
+  top: 70%;
+  visibility: visible;
+}
+
+.about-contents:hover p {
+  top: 80%;
+  visibility: visible;
+}
+
+@media screen and (min-width:769px) {
+  .about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .about-contents {
+    height: 80vh;
+  }
+  .about-container article {
+    flex: 1 1 auto;
+    margin: 0 2rem;
+
+  }
+}
+
+
+
+
+
+/* about section styles ends here */
+
+

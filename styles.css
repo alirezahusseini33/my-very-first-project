@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+  }
+  
+  html,
+  body {
+    height: 150vh;
+    width: 100%;
+    display: grid;
+    position: relative;
+    background: url(./images/flight-landscape-nature-sky-36717.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slide 120s linear infinite;
+    overflow: auto;
+  }
+    
+.page-header {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(127, 255, 212 , 0.2);
+}
+
+.header-logo {
+    margin-left: 100px;
+    margin-top: 15px;
+  }
+  
+  .logo-itself {
+    text-align: center;
+    margin-left: 100px;
+    color: #fff;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    animation-name: alireza;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    padding: 5px;
+  }
+
+  @keyframes alireza {
+    from {
+      color: #fff;
+      border-radius: 50px;
+      background-color: rgba(124, 252, 0, 0.2);
+    }
+    to {
+      color: red;
+      border-radius: 5px;
+      background-color: rgba(255, 0, 255, 0.3);
+      color: lightskyblue;
+    }
+  }
+  
+  @keyframes ali {
+    0% {
+      top: 0;
+      left: 30px;
+    }
+  
+    100% {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  /* nav styles */
+  .nav {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: 100px;
+  }
+
+  .nav-ul {
+      list-style: none;
+      display: flex;
+  }
+
+  .nav-li {
+      padding: 5px;
+      font-size: larger;
+      transition: all 0.5s linear;
+      margin-right: 10px;
+      border-bottom: 1px solid white;
+  }
+
+  .nav-li a {
+      text-decoration: none;
+      color: #fff;
+
+  }
+
+  .nav-li:hover {
+      transform: scale(1.5);
+      background-color: lawngreen;
+      border-radius: 5px;
+      border-bottom: none;
+  }
+
+  /* main page styles */
+  .main-page {
+      position: relative;
+      height: 85vh;
+  }
+
+  .signup-container {
+      position: relative;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      width: 700px;
+  }
+
+  .signup-form {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items:center ;
+      background-color: rgba(127, 255, 212 , 0.2);
+      width: 400px;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+  .signup-head {
+    margin-top: 20px;
+    padding: 20px;
+    color: #fff;
+    font-size: xx-large;
+    font-weight: 900;
+  }
+
+
+  .signup-label-txt {
+      display: block;
+      margin-right: 10px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: white;
+      font-size: large;
+      font-weight: 500;
+  }
+
+  .signup-input {
+    display: block;
+    height: 30px;
+    width: 250px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 50px;
+    transition: all 0.3s linear;
+    background-color: rgba(127, 255, 212 , 0.1);
+  }
+
+  .signup-input:hover {
+    background: rgba(107, 107, 107, 0);
+    transform: scale(1.1);
+    border: 1px solid rgba(5, 121, 253, 0.966);
+    box-shadow: 0 2px 2px rgba(5, 121, 253, 0.966);
+  }
+
+  .already {
+    display: block;
+    margin: 20px 0;
+  }
+
+  .already-txt {
+    color: #fff;
+    font-size: large;
+    font-weight: 700;
+    transition: all 0.3s linear;
+  }
+
+  .already-txt:hover {
+    transform: scale(1.3);
+    color: rgba(5, 121, 253, 0.966);
+    cursor: pointer;
+  }
+
+  .button {
+    display: block;
+    margin: 20px 0;
+  }
+
+  .button-btn {
+    padding: 10px 50px;
+    border-radius: 50px;
+    border: 1px solid black;
+    outline: none;
+    font-size: large;
+    font-weight: 700;
+    color: #fff;
+    background: transparent;
+    transition: all 0.5s linear;
+  }
+
+  .button-btn:hover {
+    background-color:rgba(127, 255, 212 , 0.1) ;
+    border: 1px solid rgba(5, 121, 253, 0.966);
+    box-shadow: 2px 2px 5px rgba(5, 121, 253, 0.966);
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  /* end of general styles for registration pages */
+
+  /* signup.html page styles is here */
+
+  .sign-up-input {
+    display: block;
+    height: 30px;
+    width: 250px;
+    border: 1px solid rgb(255, 255, 0);
+    outline: none;
+    border-radius: 50px;
+    transition: all 0.3s linear;
+    background-color: rgba(127, 255, 212 , 0.1);
+  }
+
+  .sign-up-input:hover {
+    background: rgba(107, 107, 107, 0);
+    transform: scale(1.1);
+    border: 1px solid rgb(255, 255, 0);
+    box-shadow: 0 2px 2px rgb(255, 255, 0);
+  }
+
+  #signup-btn {
+    border: 1px solid rgb(255, 255, 0);
+  }
+
+  .button-btn:hover {
+    background-color:rgba(127, 255, 212 , 0.1) ;
+    border: 1px solid rgb(255, 255, 0);
+    box-shadow: 2px 2px 5px rgb(255, 255, 0);
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+
+  /* signup.html page styles ends here */
+
+  /* signin.html page styles starts here */ 
+
+  .sign-in-input {
+    display: block;
+    height: 30px;
+    width: 250px;
+    border: 1px solid rgb(56, 250, 56);
+    outline: none;
+    border-radius: 50px;
+    transition: all 0.3s linear;
+    background-color: rgba(127, 255, 212 , 0.1);
+  }
+
+  .sign-in-input:hover {
+    background: rgba(107, 107, 107, 0);
+    transform: scale(1.1);
+    border: 1px solid rgb(56, 250, 56);
+    box-shadow: 0 2px 2px  rgb(56, 250, 56);
+  }
+
+  #signin-btn {
+    border: 1px solid rgb(56, 250, 56);
+  }
+
+  #signin-btn:hover {
+    background-color:rgba(127, 255, 212 , 0.1) ;
+    border: 1px solid rgb(56, 250, 56);
+    box-shadow: 2px 2px 5px rgb(56, 250, 56);
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+/* signin.html page styles ends here */ 
+
+
+/* web.html page styles starts here */
+
+.section-1 {
+  position: absolute;
+  top: 15vh;
+  height: 40vh;
+  width: 100%;
+  background-color: rgba(250, 235, 215, 1);
+  border-top: 3px solid magenta;
+  display: flex;
+}
+
+.section-1-1 {
+  height: 100%;
+  width: 100%;
+  float: left;
+  margin: 10px;
+}
+
+
+.head-txt-1 {
+  background-color: grey;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+
+.section-1-2 {
+  background-color: rgba(128, 128, 128, 0.4);
+  height: 40vh;
+}
+
+.head-txt-2 {
+  font-size: larger;
+  font-weight: 700;
+  padding-left: 20px;
+  padding-top: 30px;
+  line-height: 40px;
+}
+
+.txt-2-span {
+  border-bottom: 2px solid magenta;
+  padding-bottom: 10px;
+}
+
+.section-1-1 a {
+  text-decoration: none;
+  font-size: larger;
+  font-weight: 700;
+  padding-left: 20px;
+  padding-top: 30px;
+  line-height: 40px;
+  border-bottom: 1px solid magenta;
+}
+
+.img-1-1 {
+   width: 200px;
+   height: 200px;
+   margin: 10px;
+}
+
+.img-0 {
+  height: 200px;
+  width: 200px;
+  float: left;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px black,1px 1px 2px lightskyblue;
+}
+
+/* main-page section styles */
+
+.main-page-1 {
+  box-sizing: border-box;
+  position: absolute;
+  background-color: #ffffff;
+  width: 100%;
+  height: 63.4%;
+  top: 55vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-page-contents-1 {
+  background-color: #ffffff;
+  height: 90%;
+  width: 60%;
+  margin: 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.main-page-contents-2 {
+  background-color: #fff;
+  height: 90%;
+  width: 40%;
+  margin: 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  place-content: center;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.main-page-1 h1 {
+  text-align: center;
+  font-weight: 900;
+  padding-top: 10px;
+  text-transform: uppercase;
+}
+
+.main-page-1 p {
+  text-align: center;
+  padding: 5px;
+  padding-top: 25px;
+  line-height: 25px;
+}
+
+.main-page-img-1 {
+  position: relative;
+  height: 150px;
+  width: 90%;
+  display: block;
+  margin: 10px auto;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.main-page-img-2 {
+  position: relative;
+  height: 150px;
+  width: 90%;
+  display: block;
+  margin: 10px auto;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+hr {
+  width: 80%;
+  margin: 0 auto;
+  color: magenta;
+}
+
+
