@@ -31,6 +31,9 @@ main {
       center/cover,
     no-repeat;
   border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(238, 238, 238, 0.2);
+  display: flex;
+  
 }
 
 header {
@@ -63,10 +66,9 @@ header ul li .navbar-link {
 }
 
 .navbar-link:hover {
-    background-color: var(--mainblue);
-    color: var(--white);
-  }
-  
+  background-color: var(--mainblue);
+  color: var(--white);
+}
 
 #active {
   background-color: var(--mainblue);
@@ -74,22 +76,26 @@ header ul li .navbar-link {
 }
 
 #active:hover {
-    background-color: var(--white);
-    color: var(--mainblue);
+  background-color: var(--white);
+  color: var(--mainblue);
 }
-
 
 .navbar-link:hover {
   background-color: var(--mainblue);
   color: var(--white);
 }
 
-@media screen and (max-width:768px) {
-    header ul {
-        flex-direction: column;
-    }
-    header ul li {
-        margin: 1rem;
-    }
+@media screen and (max-width: 768px) {
+  body {
+    min-height: 200vh;
+  }
+  main{
+    height: 190vh;
+  }
+  header ul {
+    flex-direction: column;
+  }
+  header ul li {
+    margin: 2rem 1rem;
+  }
 }
-
