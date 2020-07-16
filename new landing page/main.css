@@ -200,12 +200,20 @@ header ul li .navbar-link {
   cursor: pointer;
   flex: 1;
   padding: 1rem 2rem;
-  transition: all 0.3s ease-in;
+  transition: all 0.3s linear;
 }
 
 .footer-part-contents:hover {
   background-color: var(--mainblue);
   color: var(--white);
+}
+
+.footer-part-contents:hover p {
+  color: var(--white);
+}
+
+.footer-part-contents:hover p:last-child {
+  background-color: var(--black);
 }
 
 .footer-part-contents p:last-child {
@@ -214,10 +222,17 @@ header ul li .navbar-link {
   border-radius: 25px;
   background-color: #e2dddd;
   columns: var(--white);
+  transition: all 0.3s linear;
 }
 
 .footer-part-contents p:last-child i {
   margin: 0 0.5rem;
+  transition: all 0.3s linear;
+}
+
+.footer-txt {
+  color: var(--light-grey);
+  transition: all 0.3s linear;
 }
 
 @media screen and (max-width:668px) {
