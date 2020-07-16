@@ -142,6 +142,14 @@ header ul li .navbar-link {
   margin-top: 2rem;
 }
 
+@media screen and (max-width:668px) {
+  .main-part-form {
+    flex-wrap: wrap;
+  }
+  .main-part-form input,button {
+    margin: 1rem 0;
+  }
+}
 .main-part-form input,button {
   border: none;
   outline: none;
