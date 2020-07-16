@@ -13,6 +13,9 @@ html {
 :root {
   --mainblue: #4a8fe7;
   --white: #fff;
+  --light-grey:#afa6a6;
+  --orange:#e4a425;
+  --black:#212121;
 }
 
 body {
@@ -25,13 +28,14 @@ body {
 }
 
 main {
-  height: 90vh;
+  margin: 2rem 0;
+  min-height: 90vh;
   width: 90%;
   background: url(../images/mohamed-sameeh-xi1kJ0OYlL8-unsplash.jpg)
       center/cover,
     no-repeat;
   border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(238, 238, 238, 0.2);
+  box-shadow: 0 5px 10px rgba(21, 21, 21, 0.2);
   display: flex;
   flex-direction: column;
 }
@@ -40,18 +44,22 @@ header {
   border-radius: inherit;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-}
-
-header ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+header ul {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
   list-style: none;
-  margin-right: 2rem;
+  margin-right:2rem;
+  align-content: center;
 }
 
 header ul li {
-  margin: 2rem 1rem;
+  margin: 1rem;
   text-decoration: none;
 }
 
@@ -87,15 +95,136 @@ header ul li .navbar-link {
 
 @media screen and (max-width: 768px) {
   body {
-    min-height: 200vh;
+    min-height: 100vh;
   }
   main{
-    height: 190vh;
+    min-height: 90vh;
   }
   header ul {
     flex-direction: column;
   }
   header ul li {
-    margin: 2rem 1rem;
+    margin: 2rem;
   }
 }
+
+/*header-part styles ends here*/
+
+/*main-part styles starts here*/
+
+.main-part {
+  padding-top: 10rem;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-part-container {
+  width: 70%;
+
+}
+
+.main-part-container h1 {
+  color: var(--white);
+}
+
+.main-part-form {
+  display: flex;
+  background-color: var(--white);
+  align-items: center;
+  justify-content: space-around;
+  height: 10vh;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  margin-top: 2rem;
+}
+
+.main-part-form input,button {
+  border: none;
+  outline: none;
+}
+
+.main-part-form input {
+  flex: 2;
+}
+
+.main-part-form input::placeholder {
+  color:var(--light-grey);
+  font-size: 1rem;
+}
+
+.main-part-form button {
+  flex: 1;
+  height: 100%;
+  background-color: var(--orange);
+  font-size: 1.1rem;
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.main-part-form button:hover {
+  background-color: var(--mainblue);
+}
+
+.main-part-form i {
+  margin: 0 1rem;
+  font-size: 1.3rem;
+}
+
+/*main-part styles ends here*/
+
+/*footer-part styles starts here*/
+.footer-part {
+  justify-self: flex-end;
+  width: 100%;
+  margin-top: 10rem;
+}
+
+.footer-part-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+  background-color: var(--white);
+  border-radius: 5px;
+}
+
+.footer-part-contents {
+  margin: 2rem;
+  cursor: pointer;
+  flex: 1;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease-in;
+}
+
+.footer-part-contents:hover {
+  background-color: var(--mainblue);
+  color: var(--white);
+}
+
+.footer-part-contents p:last-child {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 25px;
+  background-color: #e2dddd;
+  columns: var(--white);
+}
+
+.footer-part-contents p:last-child i {
+  margin: 0 0.5rem;
+}
+
+@media screen and (max-width:668px) {
+  .footer-part-container {
+    flex-direction: column;
+  }
+}
+
+
+/*footer-part styles ends here*/
