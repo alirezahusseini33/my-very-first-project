@@ -293,10 +293,6 @@ p,
   margin-right: 2rem;
 }
 
-.main-section-h1-container:nth-child(2) {
-  background-color: rgb(8, 248, 8);
-}
-
 .main-section-contents h1 {
    color: var(--white);
    text-align: center;
