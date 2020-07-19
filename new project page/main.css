@@ -1,0 +1,344 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --black: #252535;
+  --grey: #70717b;
+  --blue: #5cacfb;
+  --pink: #e3a1aa;
+  --light-blue: #6985ac;
+  --blue-grey: #446482;
+  --white: #fff;
+  --pink-darker: rgb(238, 87, 112);
+  --orange: #f7ab08;
+  --darker-orange: #fc6812;
+  --purple: purple;
+  --green: rgb(8, 248, 8);
+  --special-color: #fc4d08;
+}
+
+body {
+  background-color: var(--black);
+  min-width: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-page {
+  height: 90vh;
+  width: 90%;
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  border-radius: 10px;
+  background-color: var(--white);
+  overflow: hidden;
+}
+
+section:nth-child(1) {
+  background-color: transparent;
+  grid-column: 1/-1;
+  grid-row: 1/3;
+  border-radius: inherit;
+}
+section:nth-child(2) {
+  grid-column: 1/4;
+  grid-row: 3/-1;
+}
+section:nth-child(3) {
+  grid-column: 4/-1;
+  grid-row: 3/-1;
+}
+
+/*header section styles starts here*/
+.header-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-part div ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+.navbar-wrapper ul li {
+  margin-left: 2rem;
+  padding: 0.5rem;
+}
+
+.navbar-wrapper ul li:nth-child(4) {
+  list-style: circle;
+  list-style-image: linear-gradient(to right,red,red);
+}
+
+.navbar-wrapper ul li a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.navbar-wrapper ul li:nth-child(2) {
+  font-weight: 800;
+}
+
+.logo-part ul li {
+  margin-right: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+.logo-part ul li a {
+  text-decoration: none;
+  color: var(--black);
+  display: block;
+}
+
+.logo-part ul li:nth-child(1) {
+  border: 1px solid var(--black);
+  border-radius: 25px;
+}
+
+.logo-part ul li:nth-child(2) {
+  border-radius: 100%;
+  background-color: var(--pink-darker);
+  padding: 0.5rem;
+  font-weight: 800;
+}
+
+.logo-part ul li #logo {
+  color: var(--white);
+}
+
+/*header section styles ends here*/
+
+.sidebar-part {
+  margin: 0 1rem 1rem 1rem;
+  background-color: var(--black);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*sidebar navigation section styles starts here*/
+
+.sidebar-container {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+/*sidebar list's uniqe styles*/
+.navigation ul {
+  list-style-type: circle;
+  margin-left: 1rem;
+}
+
+.navigation ul li:nth-child(1) {
+  list-style-type: circle;
+  list-style-image: linear-gradient(to right, var(--orange), var(--orange));
+}
+
+.navigation ul li:nth-child(2) {
+  list-style-type: circle;
+  list-style-image: linear-gradient(
+    to right,
+    var(--darker-orange),
+    var(--darker-orange)
+  );
+}
+
+.navigation ul li:nth-child(3) {
+  list-style-type: circle;
+  list-style-image: linear-gradient(to right, var(--blue), var(--blue));
+}
+
+.navigation ul li:nth-child(4) {
+  list-style-type: circle;
+  list-style-image: linear-gradient(to right, var(--purple), var(--purple));
+}
+
+.navigation ul li:nth-child(5) {
+  list-style-type: circle;
+  list-style-image: linear-gradient(to right, var(--green), var(--green));
+}
+
+.navigation ul li:nth-child(6) {
+  list-style-type: circle;
+  list-style-image: linear-gradient(
+    to right,
+    var(--special-color),
+    var(--special-color)
+  );
+}
+
+/*sidebar list's uniqe styles ends here*/
+
+.navigation h5 {
+  margin-top: 1rem;
+  color: var(--grey);
+  margin-left: 1rem;
+}
+
+.navigation ul li {
+  margin: 0.5rem 0;
+  font-size: 0.8rem;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.navigation #view-all {
+  text-decoration: none;
+  color: var(--blue);
+  margin-left: 2rem;
+  font-size: 0.8rem;
+}
+
+/*sidebar navigation section styles ends here*/
+
+/*sidebar teams section styles starts here*/
+.teams {
+  display: flex;
+  flex-direction: column;
+}
+
+.teams h5 {
+  margin: 0.5rem;
+  color: var(--grey);
+  margin-left: 1rem;
+}
+
+.teams-contents {
+  background-color: #36365af3;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  border-radius: 10px;
+  width: 80%;
+  color: var(--white);
+}
+
+.teams-contents h4,
+p,
+#teams-link {
+  margin: 0.5rem 1rem;
+}
+
+.teams-contents #teams-link {
+  display: block;
+  text-decoration: none;
+  background-color: var(--white);
+  padding: 0.5rem 0;
+  text-align: center;
+  color: var(--black);
+  border-radius: 5px;
+}
+
+/*sidebar teams section styles ends here*/
+
+/*main-section styles starts here*/
+.main-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.main-part-container {
+    height: 95%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-part-container h3 {
+    margin: 0.5rem 0;
+    color: var(--black);
+}
+
+.contents-container {
+    display: flex;
+}
+
+.main-section-h1-container {
+  height: 7rem;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: var(--blue);
+  box-shadow: 0 3px 7px var(--blue-grey);
+  margin-right: 2rem;
+}
+
+.main-section-h1-container:nth-child(2) {
+  background-color: rgb(8, 248, 8);
+}
+
+.main-section-contents h1 {
+   color: var(--white);
+   text-align: center;
+   font-size: 2rem;
+}
+
+#num-2 {
+    background-color: var(--orange);
+}
+
+#num-3 {
+  background-color: var(--special-color);
+}
+
+#num-4 {
+  background-color: var(--purple);
+}
+
+#num-5 {
+  background-color: transparent;
+  color: var(--grey);
+  font-size: 1.5rem;
+  border: 1px solid var(--black);
+  box-shadow: none;
+}
+
+.main-section-footer {
+  justify-self: flex-end;
+  align-self: flex-end;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-section-footer i {
+  font-size: 1.5rem;
+  opacity: 0.5;
+}
+
+.main-section-footer p {
+  opacity: 0.5;
+}
+
+/**main-section styles ends here/
