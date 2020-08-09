@@ -1,0 +1,20 @@
+:root {
+    --light-black:#363537;
+    --light-blue:#1B98E0;
+    --semidark-blue:#006494;
+    --bluish-dark:#282F44;
+    --darker-blue:#191D32;
+    --dark-blue:#01295F;
+    --background-color: #a4b1d1;
+    --sidebar-color: #ebeef7;
+    --white: #ffffff;
+    --blue: #2034e1;
+    --gray: #b7aaac;
+    --light-black: #47414e;
+    --light-orange: #db6459;
+    --bluish-gray: #758ab4;
+    --light-blue: #b6d2f3;
+    --lighter-blue: rgba(182, 210, 243, 0.5);
+    --light-pink: #f39a9d;
+  
+}
